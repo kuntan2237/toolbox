@@ -1,4 +1,3 @@
 # Tool list
-## Emacs profile
-- .emacs
-- .emacs.d
+- Emacs Profile
+- Auto Mine Tools
