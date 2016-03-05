@@ -1,6 +1,7 @@
 #! /bin/bash
 
 INTERVAL=10
+LATENCY_THRESHOLD=50
 DIR=$(dirname ${BASH_SOURCE[*]})
 
 getLatency() {
@@ -22,7 +23,7 @@ getProxy() {
         if [ x$bestProxy == x$proxy ]; then continue; fi
 
 	local latency=`getLatency $proxy`
-        if [ $(echo $bestLatency'>'$latency'+10' | bc) == 1 ]; then
+        if [ $(echo $bestLatency'>'$latency'+'$LATENCY_THRESHOLD | bc) == 1 ]; then
             bestProxy=$proxy
             bestLatency=$latency
 	    fi
