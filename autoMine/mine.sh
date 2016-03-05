@@ -1,7 +1,7 @@
 #! /bin/bash
 
 INTERVAL=10
-LATENCY_THRESHOLD=50
+LATENCY_THRESHOLD=100
 DIR=$(dirname ${BASH_SOURCE[*]})
 
 getLatency() {
