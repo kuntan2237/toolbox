@@ -33,7 +33,7 @@ getProxy() {
 }
 
 if [ x$1 == x ]; then
-    currProxy="hk"
+    currProxy="jp"
 else
     currProxy=$1
 fi
