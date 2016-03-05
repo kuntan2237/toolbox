@@ -7,7 +7,7 @@ source $DIR/commands &
 
 # wait if there's no update
 pushd $DIR
-while git pull origin master 2>&1 | grep "Already up-to-date" > /dev/null; do
+while git pull origin autoMine 2>&1 | grep "Already up-to-date" > /dev/null; do
     sleep $INTERVAL
 done
 popd
