@@ -10,8 +10,8 @@ CPU="cpuminer"
 GPU="ccminer"
 
 # miner parameters
-#ALOG="quark"; PORT="3345"
-ALOG="x11"; PORT="3336"
+ALOG="quark"; PORT="3345"
+#ALOG="x11"; PORT="3336"
 PROXY="jp"
 WALLET="1GYFNyra9yTcX74ibEx2Vwjio81yBKBT5m"
 WORKER="default"
