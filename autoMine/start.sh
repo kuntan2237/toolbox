@@ -28,7 +28,7 @@ for miner in $CPU $GPU; do
 
     # name the worker
     #WORKER=`ifconfig | grep "127.0.0" | awk -F'[ .]' '{print $13}' | xargs printf %03d`${miner:0:3}
-    WORKER=`ifconfig | grep "10.42.0" | awk -F'[ .]' '{print $13}' | xargs printf %03d`${$miner:0:3}
+    WORKER=`ifconfig | grep "10.42.0" | awk -F'[ .]' '{print $13}' | xargs printf %03d`${miner:0:3}
 
     # get thread number for CPU
     if [ x$miner == x"cpuminer" ]; then
