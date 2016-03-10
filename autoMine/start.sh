@@ -35,7 +35,7 @@ for miner in $CPU $GPU; do
 	THREADS=$[`nproc`-2]
     else
 	THREADS="0"
-	lsmod | grep nvidia || echo_time No GPU Found!; continue
+	lsmod | grep nvidia > /dev/null || echo_time No GPU Found! | continue
     fi
 
     # start mining
