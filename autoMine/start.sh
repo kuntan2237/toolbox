@@ -12,7 +12,7 @@ GPU="ccminer"
 # miner parameters
 ALOG="quark"; PORT="3345"
 #ALOG="x11"; PORT="3336"
-PROXY="jp"
+PROXY="hk"
 WALLET="1GYFNyra9yTcX74ibEx2Vwjio81yBKBT5m"
 WORKER="default"
 PASSWORD="x"
