@@ -13,7 +13,8 @@ GPU="ccminer"
 ALOG="quark"; PORT="3345"
 #ALOG="x11"; PORT="3336"
 PROXY="hk"
-WALLET="1GYFNyra9yTcX74ibEx2Vwjio81yBKBT5m"
+#WALLET="1GYFNyra9yTcX74ibEx2Vwjio81yBKBT5m" #blockchain
+WALLET="1FVFQL9LdUEoXFJnibmaZp7qHpUQRqYNN6" #okcoin
 WORKER="default"
 PASSWORD="x"
 THREADS="0"
