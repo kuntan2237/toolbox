@@ -1,9 +1,9 @@
 #! /bin/bash
 
-INTERVAL=10
+COUNT=10
 
 getLatency() {
-    local latency=`ping -c $INTERVAL -s 128 speedtest.$1.nicehash.com | grep rtt | awk -F '/' {'print $5'}`
+    local latency=`ping -c $COUNT -w 5 -i 0.2 speedtest.$1.nicehash.com | grep rtt | awk -F '/' {'print $5'}`
     if [ x"$1" == x"hk" ]; then
         echo "$latency+150" | bc
     elif [ x"$1" == x"jp" ]; then
@@ -14,8 +14,8 @@ getLatency() {
 }
 
 # set default gateway
-best_proxy="usa"
-best_latency=`getLatency $best_proxy`
+best_proxy="none"
+best_latency="10000"
 
 for proxy in "hk" "jp" "usa" "eu"; do
     if [ x$best_proxy == x$proxy ]; then

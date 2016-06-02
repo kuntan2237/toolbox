@@ -1,3 +1,3 @@
 # Tool list
-- Emacs Profile
-- Auto Mine Tools
+- Emacs profile
+- Auto connecting wifi
