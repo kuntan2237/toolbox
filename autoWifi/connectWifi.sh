@@ -36,7 +36,7 @@ while true; do
 	sleep $INTERVAL
     done
     # Login
-    $(dirname ${BASH_SOURCE[*]})/loginISH.py $1 $2
+    timeout 30s $(dirname ${BASH_SOURCE[*]})/loginISH.py $1 $2
     echo_time Login ... $?
     sleep $INTERVAL
 done
