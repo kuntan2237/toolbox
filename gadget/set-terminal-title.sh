@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 
 grep set-title ~/.bashrc > /dev/null
 if [ $? = 0 ]; then
